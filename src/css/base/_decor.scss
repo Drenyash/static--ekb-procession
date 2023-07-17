@@ -1,0 +1,161 @@
+.decor-1 {
+    position: relative;
+    @include r(1200) {
+        color: $light;
+        padding-left: rem(15);
+        margin-left: rem(-15);
+        padding-right: rem(15);
+        margin-right: rem(-15);
+        background-color: $purple;
+    }
+
+    &:after {
+        top: -43%;
+        right: -17%;
+        content: "";
+        display: block;
+        width: rem(416);
+        height: rem(460);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-1.svg");
+
+        @include r(1200) {
+            top: -9%;
+            left: 9%;
+            width: rem(291);
+            height: rem(207);
+            background-image: url("../assets/images/decor-1-mob.svg");
+        }
+    }
+}
+
+.decor-2 {
+    position: relative;
+
+    &:after {
+        right: 65%;
+        content: "";
+        bottom: -15%;
+        display: block;
+        width: rem(491);
+        height: rem(190);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-2.svg");
+
+        @include r(1200) {
+            left: 10%;
+            top: rem(-200);
+            width: rem(288);
+            height: rem(176);
+            background-image: url("../assets/images/decor-2-mob.svg");
+        }
+    }
+}
+
+.decor-3 {
+    position: relative;
+
+    &:after {
+        top: -60%;
+        right: -38%;
+        content: "";
+        display: block;
+        width: rem(418);
+        height: rem(468);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-3.svg");
+
+        @include r(1200) {
+            left: 0;
+            top: rem(-148);
+            width: rem(275);
+            height: rem(117);
+            background-image: url("../assets/images/decor-3-mob.svg");
+        }
+    }
+}
+
+.decor-4 {
+    position: relative;
+
+    &:after {
+        bottom: 0;
+        left: -75%;
+        content: "";
+        display: block;
+        width: rem(498);
+        height: rem(178);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-4.svg");
+
+        @include r(1200) {
+            left: 0;
+            top: -60%;
+            bottom: auto;
+            width: rem(291);
+            height: rem(207);
+            background-image: url("../assets/images/decor-4-mob.svg");
+        }
+    }
+}
+
+.bg-1 {
+    background-repeat: no-repeat;
+    background-position: top calc(50% - 50px) left rem(-290), center;
+    background-size: rem(580) rem(580), rem(1660) rem(510);
+    background-image: url("../assets/images/decor-ring.svg"), url("../assets/images/decor-ornament-2.svg");
+
+    @include r(1200) {
+        background-size: 100% auto;
+        background-position: top center;
+        background-image: url("../assets/images/decor-ornament-2.svg");
+    }
+}
+
+.bg-2 {
+    background-repeat: no-repeat;
+    background-position: top 550px right calc(50% + 700px), top 130px right calc(50% - 1010px), center;
+    background-size: rem(765) rem(765), rem(850) rem(600), rem(1660) rem(510);
+    background-image: url("../assets/images/decor-part-circle.svg"), url("../assets/images/decor-part-ornament.svg"), url("../assets/images/decor-ornament.svg");
+
+    @include r(1200) {
+        background: none;
+        //background-size: rem(320) rem(320), rem(850) rem(600), rem(1660) rem(510);
+        //background-position: bottom rem(-115) right calc(100vw - 215px), top rem(130) right calc(50% - 1010px), center;
+    }
+}
+
+.bg-3 {
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-image: url("../assets/images/decor-tree-left.png"), url("../assets/images/decor-tree-right.png");
+    @include r(1200) {
+        background-position: top right, bottom left;
+        background-image: url("../assets/images/decor-mob-tree-right.png"), url("../assets/images/decor-mob-tree-left.png");
+    }
+}
+
+.bg-4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/images/decor-ornament-3.svg");
+    @include r(1200) {
+        background-size: auto 80%;
+    }
+}

@@ -1,0 +1,38 @@
+.character {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+  transition: .2s linear;
+
+  @include r(1200) {
+    row-gap: rem(10);
+  }
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &__picture {
+    border-radius: rem(16);
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 270px;
+      height: 235px;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(32);
+    color: $dark;
+
+    @include r(1200) {
+      font-size: rem(20);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.event {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  @include r(1200) {
+    row-gap: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  &__picture {
+    display: flex;
+    height: 441px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @include r(1200) {
+      height: 230px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

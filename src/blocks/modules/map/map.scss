@@ -1,0 +1,21 @@
+.map {
+  display: flex;
+  width: 100%;
+  height: 897px;
+
+  @include r(1200) {
+    height: 426px;
+  }
+
+  img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+
+    @include r(500) {
+      object-position: -215px center;
+    }
+  }
+}

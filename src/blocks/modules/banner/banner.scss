@@ -1,0 +1,43 @@
+.banner {
+  display: flex;
+  padding: rem(40) rem(70) rem(48) rem(60);
+  width: 100%;
+  height: 100%;
+  background: #E9F1F7 url('../../../assets/images/line.svg') no-repeat;
+  background-position: 46% 68%;
+  border-radius: rem(10);
+
+  @include r(1200) {
+    padding: rem(20) rem(18);
+    background: #E9F1F7;
+  }
+
+  &__title {
+    font-size: rem(24);
+    line-height: rem(27);
+
+    @include r(1200) {
+      font-size: rem(20);
+    }
+  }
+
+  &__info {
+    max-width: rem(360);
+  }
+
+  &__social {
+    max-width: rem(225);
+    font-family: $font-title;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+
+    @include r(1200) {
+      flex-direction: column;
+    }
+  }
+}

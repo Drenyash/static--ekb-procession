@@ -1,0 +1,19 @@
+.article-event {
+  &__picture {
+    display: flex;
+    height: 486px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @include r(1200) {
+      height: 289px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.form {
+    position: relative;
+
+    &__header {
+        gap: rem(40);
+        display: flex;
+        margin-bottom: rem(40);
+        justify-content: space-between;
+
+        @include r(1200) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__info {
+        width: 50%;
+
+        @include r(1200) {
+            width: 100%;
+        }
+    }
+
+    &__main {
+        margin-bottom: rem(30);
+
+        @include r(1200) {
+            margin-bottom: rem(20);
+        }
+
+        &--slim {
+            margin-bottom: 0;
+        }
+    }
+
+    &__add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: rem(33);
+    }
+
+    &__text {
+        font-weight: 300;
+    }
+
+    &__message {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $light;
+
+        &[hidden] {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &__toolbar {
+        gap: rem(40);
+        display: flex;
+        align-items: center;
+
+        @include r(1200) {
+            gap: rem(15);
+            flex-direction: column;
+        }
+        &--column {
+            flex-direction: column;
+        }
+
+        &--slim {
+            row-gap: rem(20);
+        }
+    }
+}

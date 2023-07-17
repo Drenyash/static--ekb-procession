@@ -1,0 +1,59 @@
+.link-footer {
+    color: inherit;
+    display: block;
+    transition: 0.3s all;
+    text-decoration: none;
+    margin-bottom: rem(8);
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &--large {
+        font-weight: 500;
+        font-size: rem(20);
+        margin-bottom: rem(20);
+
+        @include r(1200) {
+            font-size: rem(16);
+            margin-bottom: rem(16);
+        }
+    }
+
+    &--head {
+        font-weight: 500;
+        font-size: rem(16);
+        margin-bottom: rem(15);
+        text-transform: uppercase;
+
+        @include r(1200) {
+            font-size: rem(14);
+        }
+    }
+
+    &--grey {
+        color: #B6B6B6;
+    }
+
+    &--land {
+        @include r(1200) {
+            font-family: Roboto !important;
+            font-weight: 700;
+            font-size: rem(16);
+        }
+        &-mail {
+            @include r(1200) {
+                font-size: rem(14);
+                line-height: rem(16);
+            }
+        }
+    }
+}

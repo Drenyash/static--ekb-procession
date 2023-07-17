@@ -1,0 +1,72 @@
+.bvi-images {
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    letter-spacing: normal;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+
+    &.bvi-images-cog {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/cog.svg");
+    }
+
+    &.bvi-images-eye-slash {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/eye-slash.svg");
+    }
+
+    &.bvi-images-volume-up {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/volume-up.svg");
+    }
+
+    &.bvi-images-volume-off {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/volume-off.svg");
+    }
+
+    &.bvi-images-adjust {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/adjust.svg");
+    }
+
+    &.bvi-images-minus-circle {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/minus-circle.svg");
+    }
+
+    &.bvi-images-image {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/image.svg");
+    }
+
+    &.bvi-images-minus {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/minus.svg");
+    }
+
+    &.bvi-images-eye {
+        fill: green;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/eye.svg");
+    }
+
+    &.bvi-images-volume-off {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/volume-off.svg");
+    }
+
+    &.bvi-images-volume-up {
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/volume-up.svg");
+    }
+
+    &.bvi-images-size-32 {
+        width: 32px !important;
+        height: 32px !important;
+    }
+}

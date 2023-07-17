@@ -1,0 +1,66 @@
+.breadcrumbs {
+  display: flex;
+  margin-left: rem(10);
+  gap: rem(10) 0;
+  flex-wrap: wrap;
+
+  &__link {
+    font-weight: 400;
+    font-size: rem(14);
+    color: #B8BBBB;
+
+    @at-root {
+      a#{&} {
+        display: flex;
+        position: relative;
+        align-items: center;
+        transition: 0.3s opacity;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &:active {
+          opacity: 0.9;
+        }
+
+        &:after {
+          height: 1px;
+          width: 12px;
+          content: "";
+          display: block;
+          margin-left: rem(8);
+          margin-right: rem(8);
+          background-color: #B8BBBB;
+        }
+      }
+    }
+
+
+  }
+
+  @include r(1200) {
+  }
+
+  &.invert {
+    .breadcrumbs__link {
+      color: $dark;
+    }
+  }
+
+}
+
+.invert {
+  .breadcrumbs {
+    &__link {
+      color: $light;
+      @at-root {
+        a#{&} {
+          &:after {
+            background-color: $light;
+          }
+        }
+      }
+    }
+  }
+}

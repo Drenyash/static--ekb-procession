@@ -1,0 +1,60 @@
+.button-scroll {
+    display: flex;
+    width: rem(50);
+    height: rem(50);
+    cursor: pointer;
+    align-items: center;
+    transition: 0.3s all;
+    border-radius: rem(50);
+    justify-content: center;
+    background-color: $light;
+
+    &__icon {
+        fill: $dark;
+        display: block;
+        width: rem(16);
+        height: rem(16);
+    }
+
+    &--green {
+        background-color: $green;
+
+        .button-scroll__icon {
+            fill: $light;
+        }
+
+        &[disabled] {
+            background-color: #CBE5EB;
+
+            .button-scroll__icon {
+                fill: $green;
+            }
+        }
+    }
+
+    &--large {
+        width: rem(70);
+        height: rem(70);
+
+        .button-scroll__icon {
+            width: rem(22);
+            height: rem(22);
+        }
+    }
+
+    &--centered-left {
+        left: 0;
+        top: 50%;
+        z-index: 2;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+
+    &--centered-right {
+        right: 0;
+        top: 50%;
+        z-index: 2;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+}

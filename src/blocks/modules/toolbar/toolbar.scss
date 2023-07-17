@@ -1,0 +1,43 @@
+.toolbar {
+    gap: rem(70);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+
+    &--mob-block {
+        @include r(1200) {
+            display: block;
+        }
+    }
+
+    &--mob-center {
+        @include r(1200) {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    &__section {
+        gap: rem(20);
+        display: flex;
+        align-items: center;
+    }
+
+    &--30 {
+        gap: rem(30);
+    }
+
+    &--start {
+        gap: rem(30);
+        justify-content: flex-start;
+
+        @include r(1200) {
+            gap: rem(20);
+        }
+    }
+
+    &--end {
+        align-items: flex-end;
+    }
+}

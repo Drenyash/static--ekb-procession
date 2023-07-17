@@ -1,0 +1,85 @@
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: rem(64);
+  text-transform: uppercase;
+
+  @include r(1200) {
+    font-size: rem(32);
+  }
+
+  small {
+    display: block;
+    line-height: 1.4;
+    font-size: rem(32);
+    margin-bottom: rem(5);
+    text-transform: lowercase;
+
+    @include r(1200) {
+      font-size: rem(20);
+      margin-bottom: rem(10);
+    }
+  }
+
+  span {
+    color: #2AA7A4;
+  }
+
+  &--cube {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-family: "Roboto Condensed";
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $light;
+
+      @include r(1200) {
+        font-size: 32px;
+      }
+
+      @include r(768) {
+        display: flex;
+      }
+
+      &:nth-child(2) {
+        margin-left: 164px;
+        @include r(768) {
+          margin-left: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        margin-left: 74px;
+        @include r(768) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &--slim {
+    font-size: rem(24);
+    line-height: rem(28);
+  }
+
+  &--dark {
+    color: $dark;
+  }
+
+  &--small {
+    font-size: rem(36);
+  }
+
+  &--medium {
+    font-size: rem(48);
+    @include r(1200) {
+      font-size: rem(32);
+      line-height: rem(37);
+    }
+  }
+}

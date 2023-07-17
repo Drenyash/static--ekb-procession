@@ -1,0 +1,14 @@
+.grid-symbols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 30px;
+
+  @include r(1200) {
+    gap: 16px;
+  }
+
+  @include r(600) {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}

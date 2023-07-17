@@ -1,0 +1,80 @@
+.contacts {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 77px 0;
+
+  @include r(1200) {
+    display: flex;
+    padding: 60px 35px;
+    row-gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8A5B8F;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -128px;
+    display: flex;
+    flex-shrink: 0;
+    width: 1920px;
+    height: 100%;
+    content: '';
+    background-color: #8A5B8F;
+    z-index: 0;
+
+    @include r(1200) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 1;
+
+    @include r(1200) {
+      font-size: 28px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 50px;
+    z-index: 1;
+    @include r(1200) {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  &__item {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px; /* 180% */
+    color: #FFFFFF;
+
+    @include r(1200) {
+      font-size: 16px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    fill: #2AA7A4;
+  }
+}

@@ -1,0 +1,45 @@
+.form-search {
+    &__input {
+        width: 100%;
+        display: block;
+        height: rem(50);
+        overflow: hidden;
+        font-size: rem(14);
+        padding-left: rem(20);
+        padding-right: rem(65);
+        text-overflow: ellipsis;
+        font-family: $font-title;
+        border: 1px solid #3D3A3A;
+        &::placeholder {
+            font-family: $font-title;
+        }
+    }
+
+    &__button {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        display: flex;
+        width: rem(50);
+        cursor: pointer;
+        position: absolute;
+        align-items: center;
+        transition: 0.3s all;
+        justify-content: center;
+
+        &:hover {
+            background-color: $light;
+            .form-search__icon {
+                fill: $dark;
+            }
+        }
+    }
+
+    &__icon {
+        fill: $light;
+        display: block;
+        width: rem(22);
+        height: rem(22);
+    }
+}

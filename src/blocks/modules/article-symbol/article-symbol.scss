@@ -1,0 +1,38 @@
+.article-symbol {
+  cursor: pointer;
+  transition: .2s linear;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 235px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0 0 40px 0 rgba(38, 38, 38, 0.06);
+
+    @include r(1200) {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262626;
+
+    @include r(1200) {
+      font-size: 14px;
+    }
+  }
+}

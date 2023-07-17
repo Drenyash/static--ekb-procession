@@ -1,0 +1,25 @@
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: $light;
+    padding: 0 calc(20px - (100vw - 100%)) 0 0;
+    transition: 0.3s background-color, 0.3s border-bottom;
+
+    @include r(1200) {
+        padding: 0;
+    }
+
+    .button {
+        margin-left: 20px;
+        @include r(1200) {
+            margin: 0;
+            padding: rem(10) rem(16);
+        }
+    }
+
+    &.invert {
+        background-color: rgba(237, 237, 237, 0);
+    }
+}

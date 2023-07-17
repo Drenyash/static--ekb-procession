@@ -1,0 +1,13 @@
+.plot__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(rem(270), 1fr));
+  gap: rem(50) rem(20);
+
+  @include r(1200) {
+    gap: rem(25);
+  }
+
+  @include r(600) {
+    grid-template-columns: 1fr;
+  }
+}

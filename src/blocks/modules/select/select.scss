@@ -1,0 +1,63 @@
+.select {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    height: rem(50);
+    padding: 0 rem(30);
+    align-items: center;
+    border-radius: rem(50);
+    font-family: $font-title;
+    text-transform: uppercase;
+
+    @include r(1200) {
+        max-width: rem(560);
+    }
+
+    &--icon-drop-green {
+        background-repeat: no-repeat;
+        background-size: rem(12) rem(6);
+        background-position: right rem(30) center;
+        background-image: url("../assets/images/arrow-drop-green.svg");
+    }
+
+    &--icon-drop-purple {
+        background-repeat: no-repeat;
+        background-size: rem(12) rem(6);
+        background-position: right rem(30) center;
+        background-image: url("../assets/images/arrow-drop-purple.svg");
+    }
+
+    &--icon-drop-orange {
+        background-repeat: no-repeat;
+        background-size: rem(12) rem(6);
+        background-position: right rem(30) center;
+        background-image: url("../assets/images/arrow-drop-orange.svg");
+    }
+
+    &--icon-calendar {
+        background-repeat: no-repeat;
+        background-size: rem(18) rem(18);
+        background-position: right rem(30) center;
+        background-image: url("../assets/images/calendar.svg");
+    }
+
+    &--green {
+        color: $green;
+        border: 1px solid $green;
+    }
+
+    &--purple {
+        color: $purple;
+        border: 1px solid $purple;
+    }
+
+    &--orange {
+        color: $dark;
+        border: 1px solid $orange;
+    }
+
+    &--green-light {
+        color: $green;
+        border: 1px solid $green;
+    }
+}
