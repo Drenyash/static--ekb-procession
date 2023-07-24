@@ -5182,18 +5182,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class Modal {
-    constructor() {
-        this.init();
-    }
+  constructor() {
+    this.close = document.querySelectorAll("[data-closemodal]");
+    this.init();
+  }
 
-    init() {
-        _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="#reg-landing"]', {
-            type: "inline",
-            groupAttr: false,
-            dragToClose: false,
-        });
-    }
+  init() {
+    _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind("[data-fancybox]", {
+      type: "inline",
+      groupAttr: false,
+      dragToClose: false,
+    });
+    this.close.forEach(el => {
+      el.addEventListener("click", () => {
+        _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.close();
+      });
+    });
+  }
 }
+
 
 
 

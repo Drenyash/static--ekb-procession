@@ -1,17 +1,23 @@
-import {Fancybox} from "@fancyapps/ui";
+import { Fancybox } from "@fancyapps/ui";
 
 class Modal {
-    constructor() {
-        this.init();
-    }
+  constructor() {
+    this.close = document.querySelectorAll("[data-closemodal]");
+    this.init();
+  }
 
-    init() {
-        Fancybox.bind('[data-fancybox="#reg-landing"]', {
-            type: "inline",
-            groupAttr: false,
-            dragToClose: false,
-        });
-    }
+  init() {
+    Fancybox.bind("[data-fancybox]", {
+      type: "inline",
+      groupAttr: false,
+      dragToClose: false,
+    });
+    this.close.forEach(el => {
+      el.addEventListener("click", () => {
+        Fancybox.close();
+      });
+    });
+  }
 }
 
-export {Modal};
+export { Modal };

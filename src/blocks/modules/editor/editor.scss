@@ -125,8 +125,9 @@
     }
 
     h5 {
+        margin-bottom: 12px;
         font-weight: 500;
-        font-size: rem(20);
+        font-size: rem(16);
         @include r(1200) {
             font-size: rem(16);
         }
@@ -300,5 +301,12 @@
             }
         }
 
+    }
+    &--modal {
+        p:not(:last-of-type) {
+            font-size: 16px;
+            color: #6F6F6F;
+            margin-bottom: 40px;
+        }
     }
 }
